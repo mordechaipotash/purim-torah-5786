@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "06-rav-kluft-what-to-learn-from-purim"
             }
+          },
+          {
+            "id": "4b3b05e14768b4ff",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "The_Miracles_of_Purim_-_Rav_Brevda.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "The_Miracles_of_Purim_-_Rav_Brevda"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "06-rav-kluft-what-to-learn-from-purim.md",
+                "file": "The_Miracles_of_Purim_-_Rav_Brevda.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +117,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 06-rav-kluft-what-to-learn-from-purim"
+              "title": "Backlinks for The_Miracles_of_Purim_-_Rav_Brevda"
             }
           },
           {
@@ -113,12 +126,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "06-rav-kluft-what-to-learn-from-purim.md",
+                "file": "The_Miracles_of_Purim_-_Rav_Brevda.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 06-rav-kluft-what-to-learn-from-purim"
+              "title": "Outgoing links from The_Miracles_of_Purim_-_Rav_Brevda"
             }
           },
           {
@@ -156,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06-rav-kluft-what-to-learn-from-purim.md",
+                "file": "The_Miracles_of_Purim_-_Rav_Brevda.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 06-rav-kluft-what-to-learn-from-purim"
+              "title": "Outline of The_Miracles_of_Purim_-_Rav_Brevda"
             }
           }
         ]
@@ -183,20 +196,37 @@
       "bases:Create new base": false
     }
   },
-  "active": "840c4adfcf906a56",
+  "active": "4b3b05e14768b4ff",
   "lastOpenFiles": [
-    "05-simcha-of-purim-love-of-hashem.md",
-    "04-rav-hutner-mesibos-chasal.md",
-    "03-rav-hutner-at-the-kings-feast.md",
-    "02-rav-brevda-miracles-of-purim-part-2.md",
-    "09-rav-edelstein-letter-purim-5783.md",
-    "08-rav-edelstein-message-for-purim.md",
-    "07-purim-with-rav-naftoli-amsterdam.md",
-    "06-rav-kluft-what-to-learn-from-purim.md",
-    "01-rav-brevda-miracles-of-purim-part-1.md",
-    "The_Miracles_of_Purim_-_Rav_Brevda.md",
-    "The_Miracles_of_Purim_-_Rav_Brevda.pdf",
-    "README.md",
-    "The Miracles of Purim -A Shiur by Rav Shlomo Brevda zt”l.md"
+    "GRA Ester Chapter 10.md",
+    "GRA Ester Chapter 9.md",
+    "GRA Ester/Hebrewbooks_org_39741.pdf",
+    "GRA Ester Chapter 8.md",
+    "GRA Ester/הגאון מוילנא (הגר\"א) אסתר י.md",
+    "GRA Ester/הגאון מוילנא (הגר\"א) אסתר ט.md",
+    "GRA Ester/הגאון מוילנא (הגר\"א) אסתר ח.md",
+    "GRA Ester/הגאון מוילנא (הגר\"א) אסתר ז.md",
+    "GRA Ester/הגאון מוילנא (הגר\"א) אסתר ד.md",
+    "GRA Ester/הגאון מוילנא (הגר\"א) אסתר ו.md",
+    "GRA Ester/הגאון מוילנא (הגר\"א) אסתר ה.md",
+    "GRA Ester/הגאון מוילנא (הגר\"א) אסתר ג.md",
+    "GRA Ester/הגאון מוילנא (הגר\"א) אסתר ב.md",
+    "GRA Ester/הגאון מוילנא (הגר\"א) אסתר א.md",
+    "GRA Ester",
+    "הגאון מוילנא (הגר\"א) אסתר ג.md",
+    "הגאון מוילנא (הגר\"א) אסתר א.md",
+    "New Folder With Items/הגאון מוילנא (הגר\"א) אסתר י.md",
+    "New Folder With Items/הגאון מוילנא (הגר\"א) אסתר ט.md",
+    "New Folder With Items/הגאון מוילנא (הגר\"א) אסתר ח.md",
+    "New Folder With Items/הגאון מוילנא (הגר\"א) אסתר ז.md",
+    "New Folder With Items/הגאון מוילנא (הגר\"א) אסתר ו.md",
+    "New Folder With Items/הגאון מוילנא (הגר\"א) אסתר ה.md",
+    "New Folder With Items/הגאון מוילנא (הגר\"א) אסתר ד.md",
+    "New Folder With Items/הגאון מוילנא (הגר\"א) אסתר ג.md",
+    "New Folder With Items/הגאון מוילנא (הגר\"א) אסתר ב.md",
+    "New Folder With Items/הגאון מוילנא (הגר\"א) אסתר א.md",
+    "New Folder With Items",
+    "הגאון מוילנא (הגר\"א) אסתר ז.md",
+    "The_Miracles_of_Purim_-_Rav_Brevda.pdf"
   ]
 }
