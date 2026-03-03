@@ -1,0 +1,255 @@
+% GRA on Megillas Esther — Complete English Rendition
+% XeLaTeX document with bilingual Hebrew/English
+\documentclass[11pt,twoside,openany]{book}
+
+% === Geometry ===
+\usepackage[
+  papersize={7in,10in},
+  inner=0.85in, outer=0.65in,
+  top=0.75in, bottom=0.75in,
+  headheight=14pt
+]{geometry}
+
+% === Fonts ===
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage{hebrew}
+
+% Main English font
+\setmainfont{EB Garamond}[
+  Numbers=OldStyle,
+  Ligatures=TeX
+]
+\setsansfont{Libertinus Sans}
+
+% Hebrew font
+\newfontfamily\hebrewfont{Frank Ruehl CLM}[
+  Script=Hebrew,
+  Scale=1.1
+]
+% For pasuk text (larger, with taamim)
+\newfontfamily\pasukfont{Ezra SIL}[
+  Script=Hebrew,
+  Scale=1.2
+]
+
+% === Headers & Footers ===
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\textsc{the vilna gaon on megillas esther}}
+\fancyhead[RO]{\small\textit{\leftmark}}
+\fancyfoot[CE,CO]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% === Section formatting ===
+\usepackage{titlesec}
+
+% Chapter style
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\centering}
+  {}
+  {0pt}
+  {}
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+
+% Section = verse grouping
+\titleformat{\section}[hang]
+  {\normalfont\Large\bfseries}
+  {}
+  {0pt}
+  {}
+\titlespacing*{\section}{0pt}{18pt}{8pt}
+
+% Subsection = peshat/remez headers
+\titleformat{\subsection}[hang]
+  {\normalfont\large\scshape}
+  {}
+  {0pt}
+  {}
+\titlespacing*{\subsection}{0pt}{12pt}{4pt}
+
+% === Custom environments ===
+\usepackage{mdframed}
+\usepackage{xcolor}
+
+% Color palette
+\definecolor{pasukbg}{HTML}{F5F0E8}
+\definecolor{pasukframe}{HTML}{8B7355}
+\definecolor{peshatcolor}{HTML}{1a3a5c}
+\definecolor{remezcolor}{HTML}{5c1a3a}
+\definecolor{notecolor}{HTML}{3a5c1a}
+\definecolor{lightgray}{HTML}{E8E8E8}
+
+% Pasuk box
+\newmdenv[
+  backgroundcolor=pasukbg,
+  linecolor=pasukframe,
+  linewidth=1pt,
+  roundcorner=3pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt,
+  innerleftmargin=12pt,
+  innerrightmargin=12pt,
+  skipabove=6pt,
+  skipbelow=6pt
+]{pasukbox}
+
+% Commentary note box (for באר אברהם / רד"ל)
+\newmdenv[
+  backgroundcolor=white,
+  linecolor=lightgray,
+  linewidth=0.5pt,
+  topline=true,
+  bottomline=false,
+  leftline=false,
+  rightline=false,
+  innertopmargin=6pt,
+  innerbottommargin=6pt,
+  skipabove=8pt,
+  skipbelow=4pt
+]{notebox}
+
+% === Macros ===
+% Pasuk (verse text)
+\newcommand{\pasuk}[2]{%
+  \begin{pasukbox}
+  \begin{center}
+  {\pasukfont\large\begin{hebrew}#1\end{hebrew}}
+  \par\vspace{4pt}
+  {\small\itshape #2}
+  \end{center}
+  \end{pasukbox}
+}
+
+% Verse reference
+\newcommand{\vref}[1]{\textbf{#1}\quad}
+
+% Hebrew inline
+\newcommand{\heb}[1]{{\hebrewfont\begin{hebrew}#1\end{hebrew}}}
+
+% Hebrew term in English context
+\newcommand{\hebterm}[2]{\textit{#1} (\heb{#2})}
+
+% Section markers
+\newcommand{\peshat}{%
+  \subsection*{\textcolor{peshatcolor}{On the Level of Peshat} \hfill {\hebrewfont\small\begin{hebrew}על דרך הפשט\end{hebrew}}}
+}
+
+\newcommand{\remez}{%
+  \subsection*{\textcolor{remezcolor}{On the Level of Remez} \hfill {\hebrewfont\small\begin{hebrew}על דרך הרמז\end{hebrew}}}
+}
+
+\newcommand{\beeravraham}{%
+  \begin{notebox}
+  {\small\textsc{Be'er Avraham} — \textit{R' Avraham ben HaGRA}}\\[4pt]
+}
+\newcommand{\endbeeravraham}{\end{notebox}}
+
+\newcommand{\radal}{%
+  \begin{notebox}
+  {\small\textsc{Pirush HaRaDaL} — \textit{R' David Luria}}\\[4pt]
+}
+\newcommand{\endradal}{\end{notebox}}
+
+% Source reference
+\newcommand{\src}[1]{{\small\textsuperscript{[\textit{#1}]}}}
+
+% === Misc ===
+\usepackage{microtype}
+\usepackage{enumitem}
+\setlist{nosep, leftmargin=*}
+
+% Paragraph formatting
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% === Hyperlinks ===
+\usepackage[
+  colorlinks=true,
+  linkcolor=peshatcolor,
+  urlcolor=peshatcolor
+]{hyperref}
+
+% ============================================================
+\begin{document}
+
+% === TITLE PAGE ===
+\begin{titlepage}
+\begin{center}
+\vspace*{1.5in}
+
+{\hebrewfont\Huge\begin{hebrew}פירוש הגר"א על מגילת אסתר\end{hebrew}}
+
+\vspace{0.3in}
+
+{\Huge\bfseries The Vilna Gaon\\[4pt] on Megillas Esther}
+
+\vspace{0.4in}
+
+{\large\itshape A Complete English Rendition}
+
+\vspace{0.15in}
+
+{\normalsize Including the commentary\\
+\hebterm{Al Derekh HaPeshat}{על דרך הפשט} — On the Level of Plain Meaning\\
+\hebterm{Al Derekh HaRemez}{על דרך הרמז} — On the Level of Allusion}
+
+\vspace{0.4in}
+
+{\small With notes from\\[4pt]
+\textsc{Be'er Avraham} — R' Avraham son of the GRA\\
+\textsc{Pirush HaRaDaL} — R' David Luria}
+
+\vspace{\fill}
+
+{\footnotesize Based on the Warsaw Edition\\
+Source: HebrewBooks.org \#39741\\[8pt]
+Digitized and rendered for Purim 5786}
+
+\end{center}
+\end{titlepage}
+
+% === FRONT MATTER ===
+\frontmatter
+
+\chapter*{Preface}
+
+This volume presents the complete commentary of the Vilna Gaon (Rabbi Eliyahu of Vilna, 1720--1797) on \hebterm{Megillas Esther}{מגילת אסתר}, rendered into English for the first time in its entirety.
+
+The Gaon's commentary operates on two distinct levels:
+
+\begin{itemize}
+\item \textbf{Al Derekh HaPeshat} (\heb{על דרך הפשט}) — the straightforward interpretation, dealing with the historical narrative, the political dynamics, and the revealed miracles of the Purim story.
+
+\item \textbf{Al Derekh HaRemez} (\heb{על דרך הרמז}) — the allusive interpretation, in which the Gaon reads the Megillah as an allegory for the soul's battle against the \hebterm{yetzer hara}{יצר הרע}, the structure of prayer, and the hidden spiritual architecture of redemption.
+\end{itemize}
+
+The remez layer is one of the Gaon's most remarkable achievements in biblical commentary. He maps the entire Megillah onto the daily order of prayer (\hebterm{seder ha-tefillah}{סדר התפילה}), revealing how each event in the Purim narrative corresponds to a stage in the Jew's daily spiritual ascent.
+
+Also included are notes from R' Avraham ben HaGRA (\textsc{Be'er Avraham}), who supplements his father's terse comments with expanded explanations, and from R' David Luria (\textsc{Pirush HaRaDaL}), who provides cross-references and clarifications.
+
+\vspace{12pt}
+\begin{flushright}
+\textit{Purim 5786 / March 2026}
+\end{flushright}
+
+\tableofcontents
+
+% === MAIN MATTER ===
+\mainmatter
+
+% Chapters will be \input here
+\input{chapter01}
+% \input{chapter02}
+% \input{chapter03}
+% \input{chapter04}
+% \input{chapter05}
+% \input{chapter06}
+% \input{chapter07}
+% \input{chapter08}
+% \input{chapter09}
+% \input{chapter10}
+
+\end{document}
