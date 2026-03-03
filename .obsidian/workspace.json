@@ -13,28 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06-rav-kluft-what-to-learn-from-purim.md",
+                "file": "GRA Ester/GRA Esther Chapter 1 - English.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06-rav-kluft-what-to-learn-from-purim"
-            }
-          },
-          {
-            "id": "4b3b05e14768b4ff",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "The_Miracles_of_Purim_-_Rav_Brevda.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "The_Miracles_of_Purim_-_Rav_Brevda"
+              "title": "GRA Esther Chapter 1 - English"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The_Miracles_of_Purim_-_Rav_Brevda.pdf",
+                "file": "GRA Ester/GRA Esther Chapter 1 - English.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for The_Miracles_of_Purim_-_Rav_Brevda"
+              "title": "Backlinks for GRA Esther Chapter 1 - English"
             }
           },
           {
@@ -126,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The_Miracles_of_Purim_-_Rav_Brevda.pdf",
+                "file": "GRA Ester/GRA Esther Chapter 1 - English.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from The_Miracles_of_Purim_-_Rav_Brevda"
+              "title": "Outgoing links from GRA Esther Chapter 1 - English"
             }
           },
           {
@@ -169,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The_Miracles_of_Purim_-_Rav_Brevda.pdf",
+                "file": "GRA Ester/GRA Esther Chapter 1 - English.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of The_Miracles_of_Purim_-_Rav_Brevda"
+              "title": "Outline of GRA Esther Chapter 1 - English"
             }
           }
         ]
@@ -196,12 +183,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "4b3b05e14768b4ff",
+  "active": "840c4adfcf906a56",
   "lastOpenFiles": [
-    "GRA Ester Chapter 10.md",
+    "GRA Ester/GRA_Esther_Full_OCR.md",
+    "06-rav-kluft-what-to-learn-from-purim.md",
     "GRA Ester Chapter 9.md",
-    "GRA Ester/Hebrewbooks_org_39741.pdf",
+    "GRA Ester Chapter 10.md",
     "GRA Ester Chapter 8.md",
+    "The_Miracles_of_Purim_-_Rav_Brevda.pdf",
+    "GRA Ester/GRA Esther Chapter 1 - English.md",
+    "GRA Ester/Hebrewbooks_org_39741.pdf",
     "GRA Ester/הגאון מוילנא (הגר\"א) אסתר י.md",
     "GRA Ester/הגאון מוילנא (הגר\"א) אסתר ט.md",
     "GRA Ester/הגאון מוילנא (הגר\"א) אסתר ח.md",
@@ -223,10 +214,6 @@
     "New Folder With Items/הגאון מוילנא (הגר\"א) אסתר ה.md",
     "New Folder With Items/הגאון מוילנא (הגר\"א) אסתר ד.md",
     "New Folder With Items/הגאון מוילנא (הגר\"א) אסתר ג.md",
-    "New Folder With Items/הגאון מוילנא (הגר\"א) אסתר ב.md",
-    "New Folder With Items/הגאון מוילנא (הגר\"א) אסתר א.md",
-    "New Folder With Items",
-    "הגאון מוילנא (הגר\"א) אסתר ז.md",
-    "The_Miracles_of_Purim_-_Rav_Brevda.pdf"
+    "New Folder With Items"
   ]
 }
